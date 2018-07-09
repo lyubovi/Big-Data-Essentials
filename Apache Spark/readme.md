@@ -11,9 +11,13 @@ Run the container
 docker run -it --rm -p 8888:8888 bigdatateam/spark-course1
 ```
 
-To get bash shell for the container:
+To get bash shell for the container:  
+- get process id for docker container running the following command
 ```
 docker ps
+```
+- run the shell with the process id obtained from the previous command
+```
 docker exec -it [process id] /bin/bash
 ```
 In this assignment you will use Spark to compute various statistics for word pairs. At the same time, you will learn some simple techniques of natural language processing.
