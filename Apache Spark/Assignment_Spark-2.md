@@ -15,21 +15,21 @@ NPMI is computed as “NPMI(a, b) = PMI(a, b) / -ln P(ab)”. This normalizes th
 
 You task is a bit more complicated now:
 
-* Extract all the words, as in the previous task.
-* Filter out stopwords using the dictionary (/datasets/stop_words_en.txt ) (do not forget to convert words to the lowercase!)
-* Compute all bigrams (that is, pairs of consequent words)
-* Leave only bigrams with at least 500 occurrences
-* Compute NPMI for every bigram (note: when computing probabilities, you need unpruned counts!)
-* Sort word pairs by NPMI in the descending order
-* Print top 39 word pairs, with words delimited by the underscore “_”
+- Extract all the words, as in the previous task.  
+- Filter out stopwords using the dictionary (/datasets/stop_words_en.txt ) (do not forget to convert words to the lowercase!)
+- Compute all bigrams (that is, pairs of consequent words)
+- Leave only bigrams with at least 500 occurrences
+- Compute NPMI for every bigram (note: when computing probabilities, you need unpruned counts!)
+- Sort word pairs by NPMI in the descending order
+- Print top 39 word pairs, with words delimited by the underscore “_”
 
 For example,
 
->*roman_empire*
-
+>*roman_empire*  
 >*south_africa*
 
 The part of the result on the sample dataset:
+
 ```
 ...
 references_reading
